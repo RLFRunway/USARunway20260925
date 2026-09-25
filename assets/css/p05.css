@@ -1,0 +1,22 @@
+.slide { background:#f1f1f1; }
+.master { position:absolute; z-index:1; inset:0; width:100%; height:100%; object-fit:fill; pointer-events:none; }
+.expect { position:absolute; z-index:2; inset:9.35% 0 0; color:#092f63; background:#ededed; }
+.expect-hero { position:relative; height:36%; overflow:hidden; color:#fff; background:#061e43; }
+.expect-hero img { position:relative; left:8%; width:100%; height:100%; object-fit:cover; object-position:center 48%; transform:none; }
+.expect-hero::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(3,30,68,.82),rgba(3,35,76,.38) 52%,rgba(3,35,76,.05)); }
+.expect-hero > div { position:absolute; z-index:2; left:6.8%; top:14%; }
+.expect h1 { margin:0; font-size:3.55cqw; line-height:.92; text-transform:uppercase; }
+.expect-hero p { margin:1.4cqh 0 0; font-size:1.22cqw; line-height:1.18; font-weight:700; }
+.expect-grid { display:grid; grid-template-columns:repeat(4,1fr); height:47%; background:#fff; padding:2.5% 6.5% 0; }
+.expect-grid section { display:grid; grid-template-rows:53% 47%; padding:0 1.35cqw; border-right:1px solid #aaa; min-width:0; }
+.expect-grid section:last-child { border-right:0; }
+.expect-grid .copy { position:relative; padding-top:1.4cqh; }
+.expect-grid .copy::before { content:""; position:absolute; top:0; left:0; width:1.25cqw; height:.22cqw; background:#cc2836; }
+.expect-grid h2 { margin:0 0 1cqh; font-size:1.48cqw; text-transform:uppercase; }
+.expect-grid p { margin:0; font-size:1cqw; line-height:1.18; }
+.expect-grid img { width:100%; height:100%; object-fit:cover; }
+.expect-grid section:nth-child(1) img { object-position:center 42%; }
+.expect-grid section:nth-child(2) img { object-position:center 47%; }
+.expect-grid section:nth-child(3) img { object-position:center 38%; }
+.expect-grid section:nth-child(4) img { object-position:center 42%; }
+.expect-callout { position:absolute; left:7.3%; bottom:2.5%; margin:0; padding-left:1.2cqw; border-left:.31cqw solid #cf2937; font-size:1.18cqw; line-height:1.16; font-style:italic; font-weight:800; text-transform:uppercase; }

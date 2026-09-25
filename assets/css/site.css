@@ -1,0 +1,201 @@
+/* Shared rules for every USARunway page. */
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  --header-pill-top: 1.55%;
+  --header-pill-height: 4.55%;
+  --header-pill-color: #9a8350;
+  --header-pill-border: #263946;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  background: #020d2a;
+}
+
+body { overflow: hidden; }
+
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.slide {
+  position: relative;
+  width: min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
+  overflow: hidden;
+  container-type: size;
+  color: #fff;
+}
+
+.master {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+/* The same master-header hot zones are used on every page. */
+.header-links {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  pointer-events: none;
+}
+
+.header-links a {
+  position: absolute;
+  top: 2.45%;
+  height: 4.2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  color: transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1.34cqw;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.header-links .home { left: 31.2%; width: 5.2%; }
+.header-links .what { left: 38.4%; width: 9.4%; }
+.header-links .approach { left: 50.5%; width: 12.6%; }
+.header-links .industries { left: 64.8%; width: 9.3%; }
+.header-links .leadership { left: 76.0%; width: 9.5%; }
+.header-links .contact { left: 88.0%; width: 7.1%; }
+
+.header-links a.active {
+  top: var(--header-pill-top);
+  height: var(--header-pill-height);
+  color: #f8dfad;
+  background: var(--header-pill-color);
+  border: .12cqw solid var(--header-pill-border);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18);
+  min-width: 0;
+}
+
+.header-links .home.active {
+  left: 30.1%;
+  width: 7.4%;
+}
+
+.header-links .what.active {
+  left: 37.2%;
+  width: 11.8%;
+}
+
+.header-links .approach.active {
+  left: 49.35%;
+  width: 14.9%;
+}
+
+.header-links .industries.active {
+  left: 63.65%;
+  width: 11.6%;
+}
+
+.header-links .leadership.active {
+  left: 74.85%;
+  width: 11.8%;
+}
+
+.header-links .contact.active {
+  left: 86.85%;
+  width: 9.35%;
+}
+
+.header-links a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  body { overflow: auto; }
+  .stage { height: auto; min-height: 100vh; align-items: start; }
+  .slide { margin-top: max(0px, calc((100vh - 56.25vw) / 2)); }
+}
+
+
+/* Persistent previous/next controls for nested pages. */
+.edge-page-nav a {
+  position: fixed;
+  top: 50%;
+  z-index: 40;
+  width: clamp(38px, 3.2vw, 58px);
+  height: clamp(72px, 10vh, 112px);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, .96);
+  background: rgba(8, 28, 47, .62);
+  border: 1px solid rgba(255, 255, 255, .42);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .28);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: clamp(42px, 4.4vw, 70px);
+  font-weight: 300;
+  line-height: 1;
+  opacity: .78;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.edge-page-nav a:hover,
+.edge-page-nav a:focus-visible,
+.edge-page-nav a:active {
+  opacity: 1;
+  background: rgba(8, 28, 47, .86);
+}
+
+.edge-page-nav a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.edge-page-nav__previous {
+  left: max(4px, env(safe-area-inset-left));
+  border-radius: 0 14px 14px 0;
+}
+
+.edge-page-nav__next {
+  right: max(4px, env(safe-area-inset-right));
+  border-radius: 14px 0 0 14px;
+}
+
+@media (max-width: 700px) {
+  .edge-page-nav a {
+    width: 40px;
+    height: 76px;
+    font-size: 46px;
+    opacity: .72;
+  }
+}
+
+/* Edge navigation reliability override. Keep above all page artwork/overlays. */
+.edge-page-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  pointer-events: none;
+}
+.edge-page-nav a {
+  z-index: 2147483001;
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: .92;
+}

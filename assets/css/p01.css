@@ -1,0 +1,166 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  background: #020d2a;
+}
+
+body {
+  overflow: hidden;
+}
+
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.slide {
+  position: relative;
+  width: min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
+  overflow: hidden;
+  background: #062e79;
+  color: #fff;
+  container-type: size;
+}
+
+.master,
+.scene,
+.skyline,
+.blue-wash {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.master {
+  object-fit: cover;
+}
+
+.scene {
+  top: 9.35%;
+  height: 90.65%;
+  overflow: hidden;
+}
+
+.skyline {
+  object-fit: cover;
+  object-position: center;
+}
+
+.blue-wash {
+  background:
+    linear-gradient(180deg, rgba(1, 54, 139, .78) 0%, rgba(0, 42, 118, .71) 46%, rgba(0, 26, 78, .80) 100%),
+    linear-gradient(90deg, rgba(0, 31, 92, .34), rgba(0, 64, 150, .05));
+}
+
+.header-links {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  pointer-events: none;
+}
+
+.header-links a {
+  position: absolute;
+  top: 2.45%;
+  height: 4.2%;
+  pointer-events: auto;
+}
+
+.header-links a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.header-links .home { left: 31.2%; width: 5.2%; }
+.header-links .what { left: 38.4%; width: 9.4%; }
+.header-links .approach { left: 50.5%; width: 12.6%; }
+.header-links .industries { left: 64.8%; width: 9.3%; }
+.header-links .leadership { left: 76.0%; width: 9.5%; }
+.header-links .contact { left: 88.0%; width: 7.1%; }
+
+.content {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+
+.top-copy {
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: 11.9%;
+  margin: 0;
+  text-align: center;
+  font-size: 1.82cqw;
+  line-height: 1.17;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: .003em;
+}
+
+.team-photo {
+  position: absolute;
+  left: 26.8%;
+  top: 21.4%;
+  width: 46.4%;
+  height: 55.0%;
+  margin: 0;
+  overflow: hidden;
+  background: #d8d5cf;
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+h1 {
+  position: absolute;
+  top: 79.4%;
+  left: 16.5%;
+  width: 67%;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3.7cqw;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .016em;
+  white-space: nowrap;
+}
+
+h1 span {
+  padding: 0 .10em;
+}
+
+.bottom-copy {
+  position: absolute;
+  left: 4.8%;
+  right: 4.4%;
+  top: 89.0%;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.60cqw;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: .003em;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  body { overflow: auto; }
+  .stage { height: auto; min-height: 100vh; align-items: start; }
+  .slide { margin-top: max(0px, calc((100vh - 56.25vw) / 2)); }
+}

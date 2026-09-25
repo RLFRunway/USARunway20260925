@@ -1,0 +1,9 @@
+.health-intro { background:#06285a; color:#fff; }
+.health-group { position:absolute; left:27.2%; top:8.2%; width:72.8%; height:91.8%; object-fit:cover; object-position:center 43%; transform:scale(1.12); transform-origin:center; }
+.health-overlay { position:absolute; inset:0; background:linear-gradient(90deg,#061a49 0%,#062c63 25%,rgba(6,45,99,.88) 29.5%,transparent 48%); }
+.section-name { position:absolute; left:3%; top:1.5%; margin:0; font-size:2.25cqw; font-weight:900; text-transform:uppercase; }
+.health-copy { position:absolute; left:3%; top:23%; }
+.health-copy h1 { margin:0; font-size:3.82cqw; line-height:.98; text-transform:uppercase; }
+.health-copy p { margin:8.2cqh 0 0 .5cqw; font-size:1.48cqw; line-height:1.08; }
+.next-arrow { position:absolute; left:70.5%; top:72%; color:#fff; font-size:2cqw; text-decoration:none; }
+.photo-caption { position:absolute; right:2.8%; bottom:1.8%; margin:0; padding-left:.7cqw; border-left:.26cqw solid #d32536; font-size:2cqw; line-height:2; }

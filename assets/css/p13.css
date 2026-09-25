@@ -1,0 +1,15 @@
+.slide { background:#07346b; }
+.master { position:absolute; z-index:1; inset:0; width:100%; height:100%; object-fit:fill; pointer-events:none; }
+.defense-experience { position:absolute; z-index:2; inset:9.35% 0 0; color:#fff; background:#07346b; }
+.p13-bg { position:absolute; inset:0; width:100%; height:100%; object-fit:fill; }
+.p13-heading { position:absolute; left:8%; top:2.5%; width:64%; }
+.p13-heading > p { display:inline-block; margin:0 0 1.4cqh; padding:.7cqh 1.5cqw .55cqh; border-left:4.8cqw solid #c82635; color:#ed2633; background:rgba(5,47,99,.75); font-size:1.25cqw; font-weight:900; text-transform:uppercase; }
+.p13-heading h1 { margin:0; font-size:3.4cqw; line-height:1.03; text-transform:uppercase; }
+.p13-heading > div { margin-top:1.5cqh; font-size:1.28cqw; line-height:1.24; }
+.defense-experience article { position:absolute; top:74.2%; width:31%; }
+.defense-experience article h2 { margin:0; padding-left:1cqw; border-left:.38cqw solid #d22735; font-size:1.32cqw; line-height:1; text-transform:uppercase; }
+.defense-experience article h3 { margin:2.2cqh 0 0 1cqw; font-size:.92cqw; line-height:1; text-transform:uppercase; }
+.defense-experience article p { margin:1.05cqh 0 0 1cqw; font-size:.9cqw; line-height:1.16; }
+.defense-experience .ron { left:14%; }
+.defense-experience .phil { left:53.2%; width:32%; }
+.p13-quote { position:absolute; left:8%; bottom:1.8%; margin:0; padding-left:1.2cqw; border-left:.15cqw solid #d22735; font-size:1.55cqw; font-style:italic; }

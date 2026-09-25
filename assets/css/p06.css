@@ -1,0 +1,17 @@
+.slide { background:#f3f3f3; }
+.master { position:absolute; z-index:1; inset:0; width:100%; height:100%; object-fit:fill; pointer-events:none; }
+.industries-page { position:absolute; z-index:2; inset:9.35% 0 0; color:#092f63; background:#f3f3f3; }
+.industries-page header { text-align:center; padding-top:4.8%; }
+.industries-page h1 { margin:0; font-size:3.45cqw; line-height:1; letter-spacing:-.08cqw; text-transform:uppercase; text-shadow:.06cqw .06cqw 0 #9ca5b1; }
+.industries-page header p { margin:1.25cqh 0 0; font-size:1.35cqw; font-weight:700; }
+.industry-cards { position:absolute; left:7.1%; right:7.1%; top:29.5%; bottom:0; }
+.industry-cards > img { position:absolute; inset:0; width:100%; height:100%; object-fit:fill; }
+.industry-cards article { position:absolute; z-index:2; top:0; width:33.333%; height:100%; padding:25.5% 5.5% 0 6.5%; text-align:left; color:#fff; }
+.industry-cards .health { left:0; }
+.industry-cards .defense { left:33.333%; }
+.industry-cards .industrial { left:66.666%; }
+.industry-cards h2 { margin:0; min-height:5.1cqh; font-size:1.42cqw; line-height:1.05; text-transform:uppercase; }
+.industry-cards p { margin:1.6cqh 0 0; max-width:14.2cqw; min-height:8cqh; font-size:.98cqw; line-height:1.18; font-weight:600; }
+.industry-cards a { position:absolute; left:6%; right:30%; bottom:4.1%; height:6.6%; padding:0 1.4cqw; display:flex; align-items:center; justify-content:flex-start; color:#fff; text-decoration:none; font-size:.8cqw; font-weight:900; text-transform:uppercase; white-space:nowrap; overflow:hidden; }
+.industry-cards a span { margin-left:auto; font-size:1.25cqw; }
+.industry-cards a:focus-visible { outline:2px solid #fff; outline-offset:2px; }

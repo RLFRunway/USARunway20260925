@@ -1,0 +1,13 @@
+.healthcare-value { color:#2c355c; background:#fff; }
+.value-left { position:absolute; left:2.8%; top:4.4%; width:56%; }
+.value-left h1 { margin:2.3cqh 0 2.6cqh; font-size:3.82cqw; line-height:.95; text-transform:uppercase; }
+.value-left .intro { margin:0; width:96%; font-size:1.3cqw; line-height:1.22; }
+.meeting-photo { position:absolute; right:0; top:0; width:40.2%; height:81%; object-fit:cover; object-position:center 55%; }
+.value-grid { position:relative; width:87%; height:36.5cqh; margin-top:2.4cqh; }
+.value-grid > img { position:absolute; inset:0; width:100%; height:100%; object-fit:fill; }
+.value-grid article { position:absolute; top:39%; width:25%; text-align:center; color:#0c2051; }
+.value-grid article:nth-of-type(1){left:0}.value-grid article:nth-of-type(2){left:25%}.value-grid article:nth-of-type(3){left:50%}.value-grid article:nth-of-type(4){left:75%}
+.value-grid h2 { margin:0 0 1.6cqh; font-size:1.18cqw; line-height:1.1; text-transform:uppercase; }
+.value-grid p { margin:0; font-size:.91cqw; line-height:1.26; }
+.bottom-quote { position:absolute; left:0; right:0; bottom:3.7%; height:12.2%; padding:1.8% 0 0 6.7%; background:#eee; }
+.bottom-quote .quote { font-size:1.42cqw; line-height:1.25; }

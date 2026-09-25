@@ -1,0 +1,15 @@
+.practical { color:#2d355b; background:#fff; }
+.topline { margin:1.9cqh 0 0; text-align:center; color:#a32330; font-size:1.25cqw; font-weight:900; text-transform:uppercase; }
+.practical > h1 { margin:.6cqh 0 0; text-align:center; font-size:3.52cqw; line-height:1; text-transform:uppercase; }
+.practical > h1 span { display:inline-block; margin:0 1.2cqw; font-weight:400; }
+.practical-left { position:absolute; left:2%; top:16%; width:50.8%; }
+.practical-left .intro { margin:0; font-size:1.8cqw; line-height:1.08; width:94%; }
+.guidance-list { position:relative; width:100%; height:47cqh; margin-top:1.2cqh; }
+.guidance-list > img { position:absolute; inset:0; width:100%; height:100%; object-fit:fill; }
+.guidance-list article { position:absolute; left:17.5%; right:4%; height:25%; display:flex; align-items:center; }
+.guidance-list article:nth-of-type(1){top:0}.guidance-list article:nth-of-type(2){top:25%}.guidance-list article:nth-of-type(3){top:50%}.guidance-list article:nth-of-type(4){top:75%}
+.guidance-list h2 { flex:0 0 35%; margin:0; font-family:Georgia,serif; font-size:1.42cqw; line-height:1.05; text-transform:uppercase; }
+.guidance-list p { flex:0 0 65%; margin:0; font-size:1.18cqw; line-height:1.16; }
+.executive-photo { position:absolute; right:4.4%; top:15.3%; width:37.8%; height:68.2%; object-fit:cover; object-position:center; }
+.bottom-quote { position:absolute; left:0; right:0; bottom:3.6%; height:9.7%; padding:1.7% 0 0 5.5%; background:#ddd; }
+.bottom-quote .quote { font-size:1.65cqw; }

@@ -1,0 +1,19 @@
+.defense-readiness { color:#fff; background:#04294e; }
+.defense-art { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+.defense-readiness-copy { position:absolute; left:6.1%; top:5.6%; width:51%; }
+.defense-readiness .eyebrow { color:#b52a36; }
+.defense-readiness .eyebrow::before { background:#b52a36; }
+.defense-readiness h1 { margin:4.6cqh 0 4.2cqh; font-size:3.45cqw; line-height:.93; text-transform:uppercase; }
+.defense-readiness .intro { margin:0; width:96%; font-size:1.28cqw; line-height:1.12; }
+.readiness-values { position:absolute; left:7.6%; top:56%; width:50%; height:30%; }
+.readiness-values article { position:absolute; top:0; width:31%; min-height:28cqh; padding:0 1.35cqw; text-align:center; }
+.readiness-values article:nth-child(1) { left:0; }
+.readiness-values article:nth-child(2) { left:34.5%; }
+.readiness-values article:nth-child(3) { left:69%; }
+.readiness-values article + article { border-left:.27cqw solid #ed1b2e; }
+.readiness-values .symbol { display:block; width:45%; height:auto; aspect-ratio:1; margin:0 auto 1cqh; border:.16cqw solid #fff; border-radius:50%; object-fit:contain; }
+.readiness-values h2 { margin:0 0 1.1cqh; font-size:1.55cqw; line-height:.98; text-transform:uppercase; }
+.readiness-values p { margin:0; font-size:1.04cqw; line-height:1.16; }
+.agabi { position:absolute; right:7.4%; top:51%; margin:0; font-size:1.05cqw; line-height:1.05; text-transform:none; }
+.agabi strong { font-size:1.35cqw; text-transform:uppercase; }
+.readiness-quote { position:absolute; left:7.6%; bottom:2.5%; font-size:1.72cqw; color:#fff}

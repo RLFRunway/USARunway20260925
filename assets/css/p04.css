@@ -1,0 +1,19 @@
+.slide { background:#e7e7e7; }
+.master { position:absolute; z-index:1; inset:0; width:100%; height:100%; object-fit:fill; pointer-events:none; }
+.partnership { position:absolute; z-index:2; inset:9.35% 0 0; color:#082f65; }
+.partnership figure { position:absolute; left:0; top:0; bottom:0; width:55.4%; margin:0; overflow:hidden; }
+.partnership figure img { width:100%; height:100%; object-fit:cover; object-position:47% center; }
+.partnership figure::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 60%,rgba(2,25,59,.78)); }
+.partnership figcaption { position:absolute; z-index:2; left:7%; bottom:6.5%; padding-left:1.1cqw; border-left:.3cqw solid #d12938; color:#fff; font-size:2.05cqw; line-height:1.08; font-weight:900; text-transform:uppercase; }
+.partnership-copy { position:absolute; right:0; top:0; bottom:0; width:44.6%; padding:4.7% 3.2% 3% 5.2%; background:#e6e6e6; }
+.partnership h1 { margin:0; font-size:3.05cqw; line-height:.95; letter-spacing:-.06cqw; text-transform:uppercase; }
+.intro { margin:2.5cqh 0 0; font-size:1.28cqw; line-height:1.16; font-weight:500; }
+.commitments { position:absolute; left:5.2%; right:3.2%; top:37%; bottom:16%; }
+.commitments section { position:absolute; left:0; right:0; height:30%; margin:0; padding-left:2.05cqw; }
+.commitments section:nth-child(1) { top:0; }
+.commitments section:nth-child(2) { top:34%; }
+.commitments section:nth-child(3) { top:68%; }
+.commitments section::before { content:""; position:absolute; left:0; top:.85cqh; width:1.25cqw; height:.22cqw; background:#cd2937; }
+.commitments h2 { margin:0 0 .55cqh; font-size:1.5cqw; line-height:1; text-transform:uppercase; }
+.commitments p { margin:0; font-size:1.12cqw; line-height:1.13; }
+.us-team { position:absolute; left:5.2%; right:3.2%; bottom:4.2%; padding-top:1.45cqh; border-top:.25cqw solid #b32835; font-size:1.28cqw; line-height:1; text-transform:uppercase; }
